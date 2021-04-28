@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[3]:
 
 
 import tensorflow as tf
@@ -28,6 +28,8 @@ model.compile(optimizer = SGD(), loss = mse, metrics = ['acc']) # list 형태로
 
 #학습시키기 
 model.fit(x,y, epochs = 500)
+
+model.get_weights()
 
 
 # In[ ]:
